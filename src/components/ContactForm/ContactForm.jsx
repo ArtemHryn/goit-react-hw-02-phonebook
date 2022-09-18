@@ -1,5 +1,6 @@
 import { Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import PropTypes from 'prop-types';
 import {
   ErrorText,
   FormBlock,
@@ -65,4 +66,8 @@ export const ContactForm = ({onAddTask }) => {
       </FormBlock>
     </Formik>
   );
+};
+
+ContactForm.propTypes = {
+  onAddTask: PropTypes.func,
 };
